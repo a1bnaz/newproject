@@ -242,7 +242,7 @@ fourthUpgrade.forEach(element => {
 
 
 
-// EDITABLE SHOP NAME (tbh i copied from chatbbc)
+// EDITABLE SHOP NAME
 const label = document.getElementById("shopName");
 const MAX_LENGTH = 30;
 const DEFAULT_TEXT = "Your Cookie Shop";  // Default text if field is empty
