@@ -1,0 +1,142 @@
+body {
+    overflow: hidden;
+    font-size: 14px;
+    font-family: "Press Start 2P", sans-serif;
+
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "header header header"
+    "stats cookie upgrades"
+    ;
+}
+
+/* HEADER */
+
+.header {
+    display: flex;
+    border-bottom: 5px solid black;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    grid-area: header;
+}
+
+.header h1{
+    font-weight: bold;
+}
+
+/* COOKIE */
+
+.cookie{
+    grid-area: cookie;
+    text-align: center;
+}
+
+.cookie #cookieButton{
+    background: transparent;
+    border: none;
+}
+
+/* STATS */
+.stats{
+    border: 5px solid black;
+    border-top: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+.shopNameContainer{
+    /* border-top: 0px solid black; */
+    border-bottom: 5px solid black;
+}
+
+.editable-shopName{
+    font-size: 24px;
+    display: inline-block;
+    width: 100%;
+    max-width: 100%;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    word-break: break-word;
+    padding: 5px;
+}
+
+/* UPGRADES */
+.upgrades{
+    border: 5px solid black;
+    border-top: none;
+}
+
+.upgrades #upgradesHeading{
+    text-align: center;
+    /* border: 2px solid black; */
+}
+
+.firstUpgrade{
+    text-align: center;
+    margin: 2.5%;
+    border: 2px solid black;
+    border-radius: 20px;
+    transition: background-color 0.5s ease;
+    background-color: rgb(188, 184, 184);
+}
+
+.secondUpgrade{
+    text-align: center;
+    margin: 2.5%;
+    border: 2px solid black;
+    border-radius: 20px;
+    transition: background-color 0.5s ease;
+    background-color: rgb(188, 184, 184);
+}
+
+.thirdUpgrade{
+    text-align: center;
+    margin: 2.5%;
+    border: 2px solid black;
+    border-radius: 20px;
+    transition: background-color 0.5s ease;
+    background-color: rgb(188, 184, 184);
+}
+
+.fourthUpgrade{
+    text-align: center;
+    margin: 2.5%;
+    border: 2px solid black;
+    border-radius: 20px;
+    transition: background-color 0.5s ease;
+    background-color: rgb(188, 184, 184);
+}
+
+/* HOVER CLASSES */
+
+.unlockedHoverBackgroundColor {
+    background-color: rgb(255, 255, 255)
+}
+
+.boughtBackgroundColor{
+    background-color: lightgreen !important;
+}
+
+.hoverUnlocked{
+    background-color: rgb(233, 229, 229);
+}
+
+/* COOKIE CLICK CLASSES */
+.cookieMouseToggle{
+    transition: transform 0.2s ease-in-out;
+    width: 575px;
+    height: auto;
+}
